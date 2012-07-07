@@ -1,7 +1,7 @@
 var fs, path, exists, existsSync, Seq, exports, removeAsync, removeSync;
 fs = require('fs');
 path = require('path');
-exists = path.exists, existsSync = path.existsSync;
+exists = fs.exists, existsSync = path.existsSync;
 Seq = require('seq');
 /**
  * Asynchronously and recursively remove files and/or directories.
